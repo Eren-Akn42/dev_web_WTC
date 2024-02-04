@@ -1,0 +1,426 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+*{
+    font-family: 'Montserrat';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 auto;
+}
+
+/* Tête de page */
+
+header.header{
+    display: flex;
+    align-items: center;
+}
+
+header.header img{
+    width: 80px;
+    margin-left: 10px;
+}
+
+section.top-page1{
+    background: url("../images/accueil.png");
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+}
+
+section.top-page2{
+    background: url("../images/cours.png");
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+}
+
+section.top-page3{
+    background: url("../images/certifications.png");
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+}
+
+/* Page de bienvenue (landing page) */
+
+.landing-page{
+    position: relative;
+    padding: 20px 50px;
+}
+
+.big-title{
+    color: white;
+    font-size: 80px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    text-shadow: 1px 1px 20px black;
+    max-width: 720px;
+}
+
+.scroll-down{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Menu de navigation */
+
+nav.nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 650px;
+    margin-left: 50px;
+    color: white;
+    text-shadow: 1px 1px 20px black;
+}
+
+nav.nav li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    background-color: #ed7b30;
+    border-radius: 20px;
+}
+
+nav.nav li a:hover{
+    background-color: #c9692a;
+}
+
+/* Services */
+
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.service-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.delivery-icon{
+    width: 60px;
+}
+
+.service-details{
+    font-weight: 600;
+    width: 250px;
+    text-align: center;
+}
+
+/* Cours proposés */
+
+.section-title{
+    font-size: 50px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-title::before{
+    content: "";
+    position: absolute;
+    background-color: #ed7b30;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.cours-items{
+    margin: 100px;
+}
+
+.cours-type{
+    background-color: #ed7b30;
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cours-box{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-width: 300px;
+    height: 300px;
+    flex: 1;
+}
+
+.no-grid{
+    min-width: 300px;
+    height: 300px;
+    flex: 1;
+}
+
+.cours1{
+    background-image: url("../images/cours/cybersecurite.jpg");
+}
+
+.cours2{
+    background-image: url("../images/cours/web.jpg");
+}
+
+.cours3{
+    background-image: url("../images/cours/réseau.png");
+}
+
+.cours4{
+    background-image: url("../images/cours/base\ de\ données.jpg");
+}
+
+.cours5{
+    background-image: url("../images/cours/algorithmique.jpg");
+}
+
+.cours6{
+    background-image: url("../images/cours/maintenance.png");
+}
+
+.cours7{
+    background-image: url("../images/cours/maths\ informatique.jpg");
+}
+
+.cours8{
+    background-image: url("../images/cours/gestion\ projet.png");
+}
+
+.cours-details{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #ffffffcb;
+    padding: 5px;
+    text-align: center;
+}
+
+.cours-name{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 3px;
+}
+
+/* Sélection parmis les certifications */
+
+.certification-items{
+    margin: 100px;
+}
+
+.certification-type{
+    background-color: #ffffff;
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.certification-box{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-width: 400px;
+    height: 300px;
+    flex: 1;
+}
+
+.certification1{
+    background-image: url(../images/certifications/python.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.certification2{
+    background-image: url(../images/certifications/java.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.certification3{
+    background-image: url(../images/certifications/linux.jpg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+.certification4{
+    background-image: url(../images/certifications/html\ css.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+.certification-details{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #e9e9e9cb;
+    padding: 5px;
+}
+
+.certification-name{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.certification-redirection{
+    background-color: #ed7b30;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Formulaire des cours */
+
+section.formulaire-items{
+    margin-top: 0px;
+}
+
+.formulaire-items{
+    margin: 100px;
+}
+
+.profs-items{
+    margin: 100px;
+}
+
+.formulaire-box{
+    background-color: #ed7c307a;
+    display: inline-flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.asterisque{
+    color: red;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.remarque{
+    font-size: 16px;
+    font-style: italic;
+}
+
+#envoyer{
+    background-color: #ed7b30;
+    padding: 15px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#envoyer:hover{
+    background-color: #c9692a;
+}
+
+/* Listes des professeurs */
+
+.profs-items{
+    margin: 100px;
+    margin-top: 0px;
+}
+
+.profs-liste{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-left: -100px;
+}
+
+.profs-liste img{
+    display: flex;
+    max-width: 300px;
+    margin-left: -40px;
+}
+
+.profs-liste p{
+    width: 100%;
+    font-weight: 600;
+}
+
+/* Liste des certifications */
+
+section.profs-items{
+    margin-top: 200px;
+}
+
+.listeCertifications-box{
+    background-color: #d6d6d67a;
+}
+
+.certificationGlobal{
+    display: flex;
+}
+
+.texteGlobal ul{
+    list-style-type: none;
+    margin-left: -50px;
+}
+
+.texteGlobal li{
+    margin-bottom: 10px;
+}
+
+.texteGlobal{
+    margin-left: 50px;
+}
+
+.certificationGlobal img{
+    max-width : 300px;
+}
+
+.certificationTitre{
+    color: #2695c9;
+    font-weight: 500;
+}
+
+.certificationIntitule{
+    font-weight: 600;
+}
+
+.certificationDuree{
+    font-size: 14px;
+}
+
+.certificationVoirplus{
+    margin-top: 30px;
+}
+
+.certificationVoirplus a{
+    text-decoration: none;
+    color: white;
+    background-color: #ed7b30;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.certificationVoirplus a:hover{
+    background-color: #c9692a;
+}
+
+/* Pied de page */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+}
+
+footer a.cgv{
+    text-decoration: none;
+    color: black;
+}

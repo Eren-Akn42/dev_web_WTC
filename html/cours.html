@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WTC - Demander un cours</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <section class="top-page2">
+        <header class="header">
+            <img src="../images/logo/Wake_Tech_Center_Logo.png" alt="Logo du site">
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="cours.html">Demander un cours</a></li>
+                    <li><a href="certification.html">Catalogue des certifications</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="landing-page">
+            <h1 class="big-title">Pour demander un cours, tout se passe ici !</h1>
+            <a class="scroll-down" href="#formulaire">Scroll ⬇</a>
+        </div>
+    </section>
+
+    <section class="formulaire-items" id="formulaire">
+        <h2 class="section-title">
+            Formulaire à remplir
+        </h2>
+        <div class="formulaire-box">
+            <form action="envoi_formulaire.html" method="post">
+                <label for="nom">Nom<span class="asterisque">*</span> :</label>
+                <input type="text" name="nom" id="nom" required><br><br>
+                <label for="prenom">Prénom<span class="asterisque">*</span> :</label>
+                <input type="text" name="prenom" id="prenom" required><br><br>
+                <label for="date">Date de naissance<span class="asterisque">*</span> :</label>
+                <input type="date" name="date" id="date" required><br><br>
+                <label for="email">Adresse email<span class="asterisque">*</span> :</label>
+                <input type="email" name="email" id="email" required><br><br>
+                <label for="classe">Classe<span class="asterisque">*</span> :</label>
+                <select name="classe" id="classe" required>
+                    <option value="">-- Veuillez indiquez votre classe --</option>
+                    <option value="seconde">Seconde</option>
+                    <option value="premiere">Première</option>
+                    <option value="terminale">Terminale</option>
+                    <option value="bac+1">Bac +1</option>
+                    <option value="bac+2">Bac +2</option>
+                </select>
+                <br><br>
+                <label for="theme">Thème à travailler<span class="asterisque">*</span> :</label>
+                <select name="theme" id="theme" required>
+                    <option value="">-- Veuillez choisir le thème --</option>
+                    <option value="algo">Algorithmique</option>
+                    <option value="bdd">Base de données</option>
+                    <option value="csi">Cybersécurité</option>
+                    <option value="gestion">Gestion de projet</option>
+                    <option value="maintenance">Maintenance</option>
+                    <option value="maths">Mathématiques informatiques</option>
+                    <option value="reseau">Réseaux</option>
+                    <option value="web">Web</option>
+                </select>
+                <br><br>
+                <label for="documents">Support à travailler (PDF uniquement) :</label>
+                <input type="file" name="documents" id="documents" accept=".pdf"><br><br>
+                <input type="submit" value="Envoyer le formulaire" id="envoyer">
+                <p class="asterisque">* Champs obligatoires</p>
+                <p class="remarque">Les cours durent de 1h30 à 3h en fonction des demandes (réponse en moins de 24h)</p>
+            </form>
+            <img src="../images/formulaire.jpg" alt="">
+        </div>
+    </section>
+        
+    <section class="profs-items" id="profs">
+        <h2 class="section-title">
+            Nos professeurs
+        </h2>
+        <div class="profs-items">
+            <ul class="profs-liste">
+                <li class="prof1">
+                    <img src="../images/prof/prof1.png" alt="Professeur 1">
+                    <p class="profs-name">Thierry (Cybersécurité)</p>
+                </li>
+                <li class="prof2">
+                    <img src="../images/prof/prof2.png" alt="Professeur 2">
+                    <p class="profs-name">Jean (Chef de projet web)</p>
+                </li>
+                <li class="prof3">
+                    <img src="../images/prof/prof3.png" alt="Professeur 3">
+                    <p class="profs-name">Cédric (Ingénieur réseaux)</p>
+                </li>
+                <li class="prof4">
+                    <img src="../images/prof/prof4.png" alt="Professeur 4">
+                    <p class="profs-name">Alicia (Administratrice BDD)</p>
+                </li>
+                <li class="prof5">
+                    <img src="../images/prof/prof5.png" alt="Professeur 5">
+                    <p class="profs-name">Jacques (Maintenance)</p>
+                </li>
+                <li class="prof6">
+                    <img src="../images/prof/prof6.png" alt="Professeur 6">
+                    <p class="profs-name">Anna (Cheffe de projet web)</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p class="copyright">&copy; 2022 - Eren SALLABAS</p>
+        <a href="" class="cgv">Conditions générales de ventes</a>
+    </footer>
+</body>
+</html>
